@@ -23,7 +23,7 @@ exports.sourceNodes = async (
         const contentDigest = getDigest(doc.id);
         const node = createNode(
           Object.assign({}, map(doc.data()), {
-            id: doc.id,
+            id: 'id' + doc.id,
             parent: null,
             children: [],
             internal: {
